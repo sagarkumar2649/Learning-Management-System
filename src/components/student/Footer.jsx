@@ -5,16 +5,28 @@ function Footer() {
   return (
     <div>
         <footer className="bg-gray-900 py-10 px-4 md:px-36 text-left w-full mt-10">
-          <div className='flex flex-col md:flex-row items-start px-8 md:px-0 gap-10 md:gap-32 py-10 justify-between mb-10'>
-             <div>
+          <div className='flex flex-col md:flex-row items-start px-8 md:px-0 justify-center gap-10 md:gap-32 py-10 border-b border-white/30'>
+             <div className="flex flex-col md:items-start items-center w-full">
               <img src={assets.logo_dark} alt="logo" />
-              <p>Lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been the inductry's standard dummy text.          
+              <p className='mt-6 text-center md:text-left text-sm text-white/80'>Lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been the inductry's standard dummy text.          
               </p>
              </div>
-             <div></div>
-             <div></div>
+             <div className="flex flex-col md:items-start items-center w-full">
+              <h2 className='font-semibold text-white mb-5'>Company</h2>
+              <ul className='flex md:flex-col w-full justify-between text-sm text-white/80 md:space-y-2'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+             </div>
+             <div className='hidden md:flex flex-col items-start w-full'>
+              <h2 className='font-semibold text-white mb-5'>Contact Us</h2>
+              <p className='text-sm text-white/80'>123 Main Street, Anytown, India </p>
+              <p className='text-sm text-white/80'>Email: info@ipacademy.com</p>
+             </div>
           </div>
-          <p className='text-center text-gray-500'>
+          <p className='py-4 text-center text-xs md:text-sm text-white/60'>
             &copyright; 2026 IP Academy. All rights reserved.
           </p>
         </footer>
